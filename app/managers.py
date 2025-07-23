@@ -42,7 +42,3 @@ class ActorManager:
             (pk,)
         )
         self._connection.commit()
-
-# if __name__ == "__main__":
-#     manager = ActorManager("actors_DB.sqlite", "actors")
-#     print(manager.all())
