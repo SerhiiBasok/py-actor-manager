@@ -28,4 +28,4 @@ It must take 3 parameters `pk`, `new_first_name` and `new_last_name`
 - `delete` - a method that deletes entry with given `pk` from DB. 
 It must take 1 parameter `pk`
 
-### Note: Check your code using this [checklist](checklist.md) before pushing your solution.
+Note: Check your code using this [checklist](checklist.md) before pushing your solution.
