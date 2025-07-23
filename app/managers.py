@@ -1,10 +1,13 @@
 import sqlite3
 
 from app.models import Actor
+ALLOWED_TABLES = {"actors"}
 
 
 class ActorManager:
     def __init__(self, db_name: str, table_name: str) -> None:
+        if table_name not in ALLOWED_TABLES:
+            raise ValueError(f"Table name '{table_name}' is not allowed")
         self._connection = sqlite3.connect(db_name)
         self._table_name = table_name
 
